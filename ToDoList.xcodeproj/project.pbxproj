@@ -7,15 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5698CB261F8C5ED67EB7376A /* Pods_ToDoList.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23818D0B331D5D2A7F835064 /* Pods_ToDoList.framework */; };
 		D4688A762BD9BC5E002926B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4688A752BD9BC5E002926B1 /* AppDelegate.swift */; };
 		D4688A782BD9BC5E002926B1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4688A772BD9BC5E002926B1 /* SceneDelegate.swift */; };
 		D4688A7A2BD9BC5E002926B1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4688A792BD9BC5E002926B1 /* ViewController.swift */; };
 		D4688A7D2BD9BC5E002926B1 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = D4688A7C2BD9BC5E002926B1 /* Base */; };
 		D4688A7F2BD9BC60002926B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4688A7E2BD9BC60002926B1 /* Assets.xcassets */; };
 		D4688A822BD9BC60002926B1 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = D4688A812BD9BC60002926B1 /* Base */; };
+		D4688A9F2BDDB6F8002926B1 /* InitialTasks.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4688A9E2BDDB6F8002926B1 /* InitialTasks.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		037A28E8CDE8266800C68A6E /* Pods-ToDoList.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToDoList.debug.xcconfig"; path = "Target Support Files/Pods-ToDoList/Pods-ToDoList.debug.xcconfig"; sourceTree = "<group>"; };
+		23818D0B331D5D2A7F835064 /* Pods_ToDoList.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ToDoList.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		38E0C601C6AED4B5741A93D1 /* Pods-ToDoList.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToDoList.release.xcconfig"; path = "Target Support Files/Pods-ToDoList/Pods-ToDoList.release.xcconfig"; sourceTree = "<group>"; };
 		D4688A722BD9BC5E002926B1 /* ToDoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4688A752BD9BC5E002926B1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D4688A772BD9BC5E002926B1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +29,7 @@
 		D4688A7E2BD9BC60002926B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D4688A812BD9BC60002926B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D4688A832BD9BC60002926B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D4688A9E2BDDB6F8002926B1 /* InitialTasks.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = InitialTasks.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5698CB261F8C5ED67EB7376A /* Pods_ToDoList.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7592B162B17D5885934FD9AC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				037A28E8CDE8266800C68A6E /* Pods-ToDoList.debug.xcconfig */,
+				38E0C601C6AED4B5741A93D1 /* Pods-ToDoList.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		8E4A54BD34A868C4D9FC3F95 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				23818D0B331D5D2A7F835064 /* Pods_ToDoList.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D4688A692BD9BC5E002926B1 = {
 			isa = PBXGroup;
 			children = (
 				D4688A742BD9BC5E002926B1 /* ToDoList */,
 				D4688A732BD9BC5E002926B1 /* Products */,
+				7592B162B17D5885934FD9AC /* Pods */,
+				8E4A54BD34A868C4D9FC3F95 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +82,7 @@
 		D4688A742BD9BC5E002926B1 /* ToDoList */ = {
 			isa = PBXGroup;
 			children = (
+				D4688A8C2BD9CD29002926B1 /* Sources */,
 				D4688A752BD9BC5E002926B1 /* AppDelegate.swift */,
 				D4688A772BD9BC5E002926B1 /* SceneDelegate.swift */,
 				D4688A792BD9BC5E002926B1 /* ViewController.swift */,
@@ -67,6 +94,38 @@
 			path = ToDoList;
 			sourceTree = "<group>";
 		};
+		D4688A892BD9CD29002926B1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D4688A8A2BD9CD29002926B1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D4688A8B2BD9CD29002926B1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D4688A9E2BDDB6F8002926B1 /* InitialTasks.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D4688A8C2BD9CD29002926B1 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				D4688A892BD9CD29002926B1 /* Controller */,
+				D4688A8A2BD9CD29002926B1 /* Model */,
+				D4688A8B2BD9CD29002926B1 /* View */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +133,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D4688A862BD9BC60002926B1 /* Build configuration list for PBXNativeTarget "ToDoList" */;
 			buildPhases = (
+				B3114C670825898A39D2D6A5 /* [CP] Check Pods Manifest.lock */,
 				D4688A6E2BD9BC5E002926B1 /* Sources */,
 				D4688A6F2BD9BC5E002926B1 /* Frameworks */,
 				D4688A702BD9BC5E002926B1 /* Resources */,
+				0A57ABECBC0EA61BDE51785F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -127,11 +188,54 @@
 			files = (
 				D4688A7F2BD9BC60002926B1 /* Assets.xcassets in Resources */,
 				D4688A822BD9BC60002926B1 /* Base in Resources */,
+				D4688A9F2BDDB6F8002926B1 /* InitialTasks.storyboard in Resources */,
 				D4688A7D2BD9BC5E002926B1 /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0A57ABECBC0EA61BDE51785F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ToDoList/Pods-ToDoList-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ToDoList/Pods-ToDoList-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ToDoList/Pods-ToDoList-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B3114C670825898A39D2D6A5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ToDoList-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D4688A6E2BD9BC5E002926B1 /* Sources */ = {
@@ -287,6 +391,7 @@
 		};
 		D4688A872BD9BC60002926B1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 037A28E8CDE8266800C68A6E /* Pods-ToDoList.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -298,8 +403,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -315,6 +420,7 @@
 		};
 		D4688A882BD9BC60002926B1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 38E0C601C6AED4B5741A93D1 /* Pods-ToDoList.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -326,8 +432,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
