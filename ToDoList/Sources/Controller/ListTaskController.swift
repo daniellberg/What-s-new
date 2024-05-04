@@ -19,11 +19,18 @@ class ListTaskController: UIViewController {
         
         self.tableView.delegate = self
         self.tableView.dataSource = self
-        
+        self.registerNib()
+    }
+    
+    //MARK: Private/Public Func
+    
+    private func registerNib(){
+        self.tableView.register(UINib(nibName: "EmptyTableCell", bundle: nil), forCellReuseIdentifier: "emptyTableCell")
     }
     
     //MARK: Action
     @IBAction func createNewTask(_ sender: Any) {
+        self.performSegue(withIdentifier: "createNewTaskSegue", sender: nil)
     }
     
 }
@@ -36,10 +43,16 @@ extension ListTaskController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell: TaskTableCell = tableView.dequeueReusableCell(withIdentifier: "cellTask", for: indexPath) as! TaskTableCell
+//        let cell:EmptyTableCell = tableView.dequeueReusableCell(withIdentifier: "emptyTableCell", for: indexPath) as! EmptyTableCell
         return cell
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 72
+        //100
+        return 100
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print("indexPath Row: \(indexPath.row)")
     }
 }
