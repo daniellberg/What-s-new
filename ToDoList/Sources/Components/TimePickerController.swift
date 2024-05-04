@@ -32,7 +32,7 @@ class TimePickerController: UIViewController {
             self.dismiss(animated: true){
                 guard let delegate = self.delegate else {return}
                 let datePickerSelected:Date = self.timePicker.date
-                let dateStr:String = Date().convertDateToString(date: datePickerSelected, dateFormatter: "h:mm:a")
+                let dateStr:String = Date().convertDateToString(date: datePickerSelected, dateFormatter: "h:mm a")
                 delegate.sendTime(time: dateStr)
             }
         } else {
