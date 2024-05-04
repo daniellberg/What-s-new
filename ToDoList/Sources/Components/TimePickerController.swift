@@ -7,28 +7,37 @@
 
 import UIKit
 
+protocol TimePickerProtocol {
+    func sendTime(time: String)
+}
+
 class TimePickerController: UIViewController {
     
-    
+    //MARK: IBOutlet
     @IBOutlet weak var btnOK: UIButton!
     @IBOutlet weak var btnCancel: UIButton!
     @IBOutlet weak var timePicker: UIDatePicker!
     
+    //MARK: Var/Lets
+    public var delegate:TimePickerProtocol?
+    
+    //MARK: Life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    //MARK: IBAction
+    @IBAction func close(_ sender: UIButton){
+        if sender == self.btnOK {
+            self.dismiss(animated: true){
+                guard let delegate = self.delegate else {return}
+                let datePickerSelected:Date = self.timePicker.date
+                let dateStr:String = Date().convertDateToString(date: datePickerSelected, dateFormatter: "h:mm:a")
+                delegate.sendTime(time: dateStr)
+            }
+        } else {
+            self.dismiss(animated: true)
+        }
     }
-    */
 
 }
