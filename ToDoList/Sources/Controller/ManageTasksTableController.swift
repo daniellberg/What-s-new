@@ -49,6 +49,8 @@ class ManageTasksTableController: UITableViewController{
     }
     
     @IBAction func deleteTask(_ sender: Any) {
+        TaskDefaultHelper().deleteTaskList(task: self.task!)
+        self.dismiss(animated: true)
     }
     
     @IBAction func createTask(_ sender: Any) {
@@ -76,7 +78,7 @@ class ManageTasksTableController: UITableViewController{
             
         } else {
             var list:[Task] = TaskDefaultHelper().getTaskList()
-            let task:Task = Task(id: list.count+1, title: self.txtTitle.text ?? "No title", time: self.time, date: self.date)
+            let task:Task = Task(id: TaskDefaultHelper().getNextID(), title: self.txtTitle.text ?? "No title", time: self.time, date: self.date)
             
             list.append(task)
             TaskDefaultHelper().saveTaskList(list: list)

@@ -42,8 +42,22 @@ class TaskDefaultHelper {
         self.saveTaskList(list: list)
     }
     
-    public func deleteTaskList(){
-        
+    public func deleteTaskList(task:Task){
+        var list:[Task] = self.getTaskList()
+        list.removeAll{ taskList in
+            return taskList.id == task.id
+        }
+        self.saveTaskList(list: list)
     }
     
+    public func getNextID() -> Int {
+        let list:[Task] = self.getTaskList()
+        for index in 0...list.count {
+            let listAux = list.filter {$0.id == index}
+            if listAux.count  == 0 {
+                return index
+            }
+        }
+        return 0
+    }
 }

@@ -83,7 +83,7 @@ extension ListTaskController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         //100
-        return self.list.count > 0 ? 100 : 120 //cell height : empty cell height
+        return self.list.count > 0 ? 100 : 187 //cell height : empty cell height
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
