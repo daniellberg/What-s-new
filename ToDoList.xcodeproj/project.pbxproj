@@ -151,6 +151,7 @@
 			isa = PBXGroup;
 			children = (
 				D465F6A52BE5CEF600E86B51 /* Extensions */,
+
 				D49D6C352BE5A651009C82F5 /* Components */,
 				D4688A892BD9CD29002926B1 /* Controller */,
 				D4688A8A2BD9CD29002926B1 /* Model */,
@@ -298,6 +299,7 @@
 			files = (
 				D4688AA52BDE95CD002926B1 /* ManageTasksTableController.swift in Sources */,
 				D465F6A72BE5CF0D00E86B51 /* Date.swift in Sources */,
+
 				D49D6C3F2BE5BC48009C82F5 /* TimePickerController.swift in Sources */,
 				D4A46B472BE45B20009E8C3B /* TaskTableCell.swift in Sources */,
 				D4688A7A2BD9BC5E002926B1 /* ViewController.swift in Sources */,
