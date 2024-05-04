@@ -8,7 +8,7 @@
 import UIKit
 import FSCalendar
 
-class ManageTasksTableController: UITableViewController {
+class ManageTasksTableController: UITableViewController, FSCalendarDelegate {
 
     //MARK: IBOutlet
     
@@ -19,6 +19,8 @@ class ManageTasksTableController: UITableViewController {
     //MARK: Life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.calendar.delegate = self
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -41,6 +43,12 @@ class ManageTasksTableController: UITableViewController {
     @IBAction func createTask(_ sender: Any) {
     }
 }
+
+//extension ManageTasksTableController:FSCalendarDelegate {
+//    func calendar(_ calendar: FSCalendar, didSelect date: Date, at monthPosition: FSCalendarMonthPosition) {
+//        <#code#>
+//    }
+//}
 
 extension ManageTasksTableController: TimePickerProtocol {
     func sendTime(time: String) {
