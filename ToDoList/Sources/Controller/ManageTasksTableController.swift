@@ -8,7 +8,7 @@
 import UIKit
 import FSCalendar
 
-class ManageTasksTableController: UITableViewController, FSCalendarDelegate {
+class ManageTasksTableController: UITableViewController{
 
     //MARK: IBOutlet
     
@@ -31,6 +31,7 @@ class ManageTasksTableController: UITableViewController, FSCalendarDelegate {
 
    //MARK: IBAction
     @IBAction func goBack(_ sender: Any) {
+        self.dismiss(animated: true)
     }
     
     @IBAction func openComponent(_ sender: Any) {
@@ -44,18 +45,16 @@ class ManageTasksTableController: UITableViewController, FSCalendarDelegate {
     }
 }
 
-//extension ManageTasksTableController:FSCalendarDelegate {
-//    func calendar(_ calendar: FSCalendar, didSelect date: Date, at monthPosition: FSCalendarMonthPosition) {
-//        <#code#>
-//    }
-//}
+extension ManageTasksTableController:FSCalendarDelegate {
+    func calendar(_ calendar: FSCalendar, didSelect date: Date, at monthPosition: FSCalendarMonthPosition) {
+        print(Date().convertDateToString(date: date, dateFormatter: "dd/MM/yyyy"))
+    }
+}
 
 extension ManageTasksTableController: TimePickerProtocol {
     func sendTime(time: String) {
         self.btnHour.setTitle(time, for: .normal)
     }
-    
-    
 }
 
 extension ManageTasksTableController {

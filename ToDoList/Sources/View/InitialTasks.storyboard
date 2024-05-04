@@ -275,24 +275,20 @@
                                                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UiE-OK-qdU" customClass="FSCalendar">
                                                     <rect key="frame" x="42" y="56" width="309" height="200"/>
                                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="200" id="CgP-zA-xn0"/>
                                                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="309" id="hLx-Rk-afN"/>
-
                                                         <constraint firstAttribute="height" constant="200" id="rMi-Ga-VGr"/>
                                                     </constraints>
                                                 </view>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="gWb-N4-2de" firstAttribute="top" secondItem="DDC-eJ-MHG" secondAttribute="top" constant="20" symbolic="YES" id="1OW-E9-RQC"/>
-
                                                 <constraint firstItem="UiE-OK-qdU" firstAttribute="top" secondItem="gWb-N4-2de" secondAttribute="bottom" constant="18" id="6ef-ig-V9u"/>
                                                 <constraint firstItem="UiE-OK-qdU" firstAttribute="leading" secondItem="DDC-eJ-MHG" secondAttribute="leading" constant="42" id="A0Q-Fu-RSY"/>
-
                                                 <constraint firstItem="gWb-N4-2de" firstAttribute="leading" secondItem="DDC-eJ-MHG" secondAttribute="leading" constant="20" symbolic="YES" id="Bg6-rz-8Za"/>
                                                 <constraint firstItem="UiE-OK-qdU" firstAttribute="centerX" secondItem="DDC-eJ-MHG" secondAttribute="centerX" id="bnt-6j-Asx"/>
                                             </constraints>
@@ -312,11 +308,11 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BwH-my-b6F">
-                                                    <rect key="frame" x="149" y="8" width="95" height="56"/>
+                                                    <rect key="frame" x="149" y="8" width="109" height="56"/>
                                                     <color key="backgroundColor" systemColor="systemGray6Color"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="56" id="0p0-1b-Afx"/>
-                                                        <constraint firstAttribute="width" constant="95" id="hpY-55-V4i"/>
+                                                        <constraint firstAttribute="width" constant="109" id="hpY-55-V4i"/>
                                                     </constraints>
                                                     <state key="normal" title="Button"/>
                                                     <buttonConfiguration key="configuration" style="plain" title="Time">
@@ -416,36 +412,33 @@
         </scene>
     </scenes>
     <resources>
-        <image name="calendar" catalog="system" width="32" height="32"/>
+        <image name="calendar" catalog="system" width="128" height="107"/>
         <image name="chevron.backward" catalog="system" width="97" height="128"/>
         <image name="clock" catalog="system" width="128" height="123"/>
-        <image name="plus" catalog="system" width="32" height="32"/>
+        <image name="plus" catalog="system" width="128" height="113"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="secondaryLabelColor">
-            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemGray2Color">
-            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemGray5Color">
-            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGray5Color">
             <color red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGray6Color">
-            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemRedColor">
-            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="tertiaryLabelColor">
-            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.29803921568627451" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.29803921570000003" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

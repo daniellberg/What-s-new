@@ -11,15 +11,12 @@
         <!--Time Picker Controller-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-
                 <viewController modalPresentationStyle="fullScreen" id="Y6W-OH-hqX" customClass="TimePickerController" customModule="ToDoList" customModuleProvider="target" sceneMemberID="viewController">
-
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MXc-SK-kI6">
-
                                 <rect key="frame" x="0.0" y="496" width="393" height="356"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iVQ-XM-Ek4">
@@ -40,7 +37,6 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z81-2q-f3C">
                                         <rect key="frame" x="8" y="8" width="95.666666666666671" height="60"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="95.670000000000002" id="Iph-BJ-Dny"/>
                                             <constraint firstAttribute="height" constant="60" id="MCB-DA-TYm"/>
                                         </constraints>
                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -52,14 +48,13 @@
                                             <action selector="close:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="pdp-BI-EBd"/>
                                         </connections>
                                     </button>
-                                    <datePicker contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" style="wheels" translatesAutoresizingMaskIntoConstraints="NO" id="Ym6-C3-SZq">
-                                        <rect key="frame" x="0.0" y="95" width="393" height="219"/>
+                                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" style="wheels" translatesAutoresizingMaskIntoConstraints="NO" id="Ym6-C3-SZq">
+                                        <rect key="frame" x="35" y="76" width="322" height="238"/>
                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="219" id="Flk-OQ-Pwv"/>
-
-                                            <constraint firstAttribute="width" constant="393" id="eA2-Wp-Xof"/>
-                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="322" id="h9O-Np-pFS"/>
+                                            <constraint firstAttribute="width" constant="322" id="9tj-ke-eyc"/>
+                                            <constraint firstAttribute="height" constant="238" id="Flk-OQ-Pwv"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="238" id="LOt-ZQ-7Y7"/>
                                         </constraints>
                                         <locale key="locale" localeIdentifier="en"/>
                                     </datePicker>
@@ -68,15 +63,16 @@
                                 <constraints>
                                     <constraint firstItem="iVQ-XM-Ek4" firstAttribute="leading" secondItem="Z81-2q-f3C" secondAttribute="trailing" constant="221.33333333333331" id="Dub-eJ-N1D"/>
                                     <constraint firstItem="Z81-2q-f3C" firstAttribute="top" secondItem="MXc-SK-kI6" secondAttribute="top" constant="8" id="KUI-Xh-gpI"/>
-                                    <constraint firstItem="Ym6-C3-SZq" firstAttribute="top" secondItem="Z81-2q-f3C" secondAttribute="bottom" constant="27" id="LIV-fu-bbj"/>
+                                    <constraint firstItem="Ym6-C3-SZq" firstAttribute="top" secondItem="Z81-2q-f3C" secondAttribute="bottom" constant="8" id="LIV-fu-bbj"/>
+                                    <constraint firstItem="Ym6-C3-SZq" firstAttribute="leading" secondItem="MXc-SK-kI6" secondAttribute="leading" constant="35" id="VYS-vt-e6m"/>
                                     <constraint firstItem="iVQ-XM-Ek4" firstAttribute="trailing" secondItem="MXc-SK-kI6" secondAttribute="trailingMargin" id="Xfy-Lt-sph"/>
-
-                                    <constraint firstItem="Ym6-C3-SZq" firstAttribute="leading" secondItem="MXc-SK-kI6" secondAttribute="leading" id="bJV-v8-j2R"/>
-
                                     <constraint firstAttribute="trailing" secondItem="iVQ-XM-Ek4" secondAttribute="trailing" constant="8" id="kHd-Bk-XNp"/>
-                                    <constraint firstItem="Ym6-C3-SZq" firstAttribute="top" secondItem="iVQ-XM-Ek4" secondAttribute="bottom" constant="27" id="oqE-eI-p8Y"/>
+                                    <constraint firstAttribute="trailing" secondItem="Ym6-C3-SZq" secondAttribute="trailing" constant="36" id="oTV-y0-2BK"/>
+                                    <constraint firstItem="Ym6-C3-SZq" firstAttribute="leading" secondItem="MXc-SK-kI6" secondAttribute="leading" constant="35" id="oao-CY-iWL"/>
+                                    <constraint firstItem="Ym6-C3-SZq" firstAttribute="top" secondItem="iVQ-XM-Ek4" secondAttribute="bottom" constant="8" id="oqE-eI-p8Y"/>
                                     <constraint firstItem="Z81-2q-f3C" firstAttribute="leading" secondItem="MXc-SK-kI6" secondAttribute="leading" constant="8" id="owZ-Fl-Zkf"/>
                                     <constraint firstItem="iVQ-XM-Ek4" firstAttribute="top" secondItem="MXc-SK-kI6" secondAttribute="top" constant="8" id="vb3-Db-cWe"/>
+                                    <constraint firstAttribute="trailing" secondItem="Ym6-C3-SZq" secondAttribute="trailing" constant="36" id="xDY-aH-yE8"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -88,7 +84,6 @@
                             <constraint firstItem="MXc-SK-kI6" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="vjv-gY-VTJ"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="MXc-SK-kI6" secondAttribute="trailing" id="xF8-ng-Mz2"/>
                         </constraints>
-
                     </view>
                     <connections>
                         <outlet property="btnCancel" destination="Z81-2q-f3C" id="58n-r7-ehs"/>
