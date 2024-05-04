@@ -32,8 +32,4 @@ class TaskTableCell: UITableViewCell {
     public func setTime(time:String){
         self.lblTime.text = time
     }
-    
-    
 }
-
-

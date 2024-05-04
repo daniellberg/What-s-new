@@ -29,7 +29,6 @@ class TaskDefaultHelper {
         } catch {
             print(error)
         }
-        
         return []
     }
     

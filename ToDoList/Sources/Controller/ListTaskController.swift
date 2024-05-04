@@ -56,7 +56,6 @@ class ListTaskController: UIViewController {
     @IBAction func createNewTask(_ sender: Any) {
         self.callCreateTask(task: nil)
     }
-    
 }
 
 //MARK: UITableViewDataSource, UITableViewDelegate

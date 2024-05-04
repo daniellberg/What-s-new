@@ -84,7 +84,6 @@ class ManageTasksTableController: UITableViewController{
             TaskDefaultHelper().saveTaskList(list: list)
         }
         
-        
         self.dismiss(animated: true)
     }
 }
